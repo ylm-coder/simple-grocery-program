@@ -1,0 +1,40 @@
+import java.util.Scanner;
+public class Tip {
+    public static void main(String []args){
+        double armut = 2.14;
+        double elma = 3.67;
+        double domates = 1.11;
+        double muz = 0.95;
+        double patlıcan = 5;
+        Scanner input = new Scanner(System.in);
+        System.out.println("Kaç kilo armut istiyorsun: ");
+        double armut_kilo = input.nextDouble();
+     double   armut_fiyat = armut*armut_kilo;
+        System.out.println(armut_fiyat);
+
+        System.out.println("Kaç kilo elma istiyorsun: ");
+        double elma_kilo = input.nextDouble();
+        double elma_fiyat = elma*elma_kilo;
+        System.out.println(elma_fiyat);
+
+        System.out.println("Kaç kilo domates istiyorsun: ");
+        double domates_kilo = input.nextDouble();
+        double domates_fiyat = elma*elma_kilo;
+        System.out.println(elma_fiyat);
+
+        System.out.println("Kaç muz elma istiyorsun: ");
+        double muz_kilo = input.nextDouble();
+        double muz_fiyat = elma*elma_kilo;
+        System.out.println(muz_fiyat);
+
+        System.out.println("Kaç kilo patlıcan istiyorsun: ");
+        double patlıcan_kilo = input.nextDouble();
+        double patlıcan_fiyat = elma*elma_kilo;
+        System.out.println(patlıcan_fiyat);
+
+        double toplam_fiyat = (muz_fiyat+domates_fiyat+elma_fiyat+patlıcan_fiyat+armut_fiyat);
+
+        System.out.println("Toplam ödediğiniz fiyat şudur :" +toplam_fiyat);
+
+    }
+}
